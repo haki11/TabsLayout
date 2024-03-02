@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:padding="16dp">
+
+    <!-- TextView with full name -->
+    <TextView
+        android:id="@+id/fullNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Full Name"
+        android:textSize="25sp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"/>
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/fullNameTextView"
+        android:background="#000000"/>
+
+    <!-- TextView for selecting color -->
+
+    <!-- RadioGroup with RadioButtons -->
+
+    <!-- Button for submission -->
+    <TextView
+        android:id="@+id/colorSelectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="46dp"
+        android:text="Select Your Color:"
+        android:textColor="#0000FF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/colorRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorSelectTextView"
+        android:layout_marginTop="57dp">
+
+        <RadioButton
+            android:id="@+id/greenRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#008000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:checked="true"
+            android:text="Green" />
+
+        <RadioButton
+            android:id="@+id/yellowRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFF00"
+            android:text="Yellow" />
+
+        <RadioButton
+            android:id="@+id/redRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:text="Red" />
+
+        <RadioButton
+            android:id="@+id/otherRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Other" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorRadioGroup"
+        android:layout_marginTop="68dp"
+        android:background="#000080"
+        android:text="Submit"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

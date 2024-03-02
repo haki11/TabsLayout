@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TabsLayout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="emails">
+        <item>email1@example.com</item>
+        <item>email2@example.com</item>
+        <item>email3@example.com</item>
+        <!-- Add more email items as needed -->
+    </string-array>
+</resources>

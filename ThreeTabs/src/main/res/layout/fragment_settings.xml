@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView to display the value passed from First Fragment -->
+    <TextView
+        android:id="@+id/dataTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="NO DATA"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Checkboxes for sports -->
+
+    <!-- Button to handle the selected sports -->
+
+    <CheckBox
+        android:id="@+id/hockeyCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dataTextView"
+        android:layout_marginTop="165dp"
+        android:text="Hockey"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/basketballCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hockeyCheckBox"
+        android:layout_marginTop="38dp"
+        android:text="Basketball"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/baseballCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/basketballCheckBox"
+        android:layout_marginTop="61dp"
+        android:text="Baseball"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/sportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baseballCheckBox"
+        android:layout_marginTop="81dp"
+        android:background="#006400"
+        android:text="Sport"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sportButton"
+        android:layout_marginTop="-481dp"
+        android:hint="Start typing email"
+        android:textSize="18sp" />
+
+</RelativeLayout>
