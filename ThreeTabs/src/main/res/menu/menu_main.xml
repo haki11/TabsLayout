@@ -1,0 +1,9 @@
+<!-- menu_main.xml -->
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/baseline_help_24"
+        app:showAsAction="always" />
+</menu>
